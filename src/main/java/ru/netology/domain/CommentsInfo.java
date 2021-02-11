@@ -1,22 +1,11 @@
 package ru.netology.domain;
 
 public class CommentsInfo {
-    private int id;
     private int count;
-    private boolean canPost;
-    private String text;
-    private int userId;
-    private int dateOfComment;
-    private int replyUser;
-    private int reply;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    private int canPost;
+    private int groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
 
     public int getCount() {
         return count;
@@ -26,51 +15,35 @@ public class CommentsInfo {
         this.count = count;
     }
 
-    public boolean isCanPost() {
+    public int getCanPost() {
         return canPost;
     }
 
-    public void setCanPost(boolean canPost) {
+    public void setCanPost(int canPost) {
         this.canPost = canPost;
     }
 
-    public String getText() {
-        return text;
+    public int getGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setGroupsCanPost(int groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
-    public int getUserId() {
-        return userId;
+    public boolean isCanClose() {
+        return canClose;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
     }
 
-    public int getDateOfComment() {
-        return dateOfComment;
+    public boolean isCanOpen() {
+        return canOpen;
     }
 
-    public void setDateOfComment(int dateOfComment) {
-        this.dateOfComment = dateOfComment;
-    }
-
-    public int getReplyUser() {
-        return replyUser;
-    }
-
-    public void setReplyUser(int replyUser) {
-        this.replyUser = replyUser;
-    }
-
-    public int getReply() {
-        return reply;
-    }
-
-    public void setReply(int reply) {
-        this.reply = reply;
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 }
